@@ -108,7 +108,7 @@ if __name__ == '__main__':
 
     indexList = {1,2,3,4,5}
     for index in indexList:
-        url = "E:\\UIUC\\Python500\\Fortune" + str(index) + ".html"
+        url = outputDir+ str(index) + ".html"
         page = open(url)
 
         soup = BeautifulSoup(page.read(), "html.parser")
